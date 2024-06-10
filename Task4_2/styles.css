@@ -1,0 +1,55 @@
+/* Base styling for the container */
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Link transition effect */
+a {
+    color: blue;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: red;
+}
+
+/* Button animation */
+@keyframes button-click {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.animate-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.animate-button:active {
+    animation: button-click 0.3s;
+}
+
+/* Icon rotation */
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.rotating-icon {
+    width: 50px;
+    height: 50px;
+    animation: rotate 3s linear infinite;
+}
+
+/* Additional styling for icon container */
+.icon-container {
+    margin-top: 20px;
+}
